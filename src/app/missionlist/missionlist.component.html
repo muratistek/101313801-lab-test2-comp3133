@@ -1,0 +1,24 @@
+<div class="mission-filter">
+  <h2>Launch Date</h2>
+  <div class="filter-buttons">
+    <button *ngFor="let year of years" (click)="filterMissions(year)">{{ year }}</button>
+    <button (click)="reloadComponent()">All Missions</button>
+  </div>
+</div>
+
+<hr>
+
+<div class="mission-box" *ngFor="let mission of missions">
+  <div class="mission-header">
+    <img class="mission-patch" src="{{ mission.links.mission_patch_small }}"
+      alt="{{ mission.mission_name }} mission patch">
+    <div class="mission-info">
+      <h3 class="mission-name">{{ mission.mission_name }}</h3>
+      <p class="launch-year">{{ mission.launch_year }}</p>
+    </div>
+  </div>
+  <div class="mission-details">
+    <p>{{ mission.details }}</p>
+  </div>
+  <button (click)="onMissionDetails(mission.flight_number)">DETAILS</button>
+</div>

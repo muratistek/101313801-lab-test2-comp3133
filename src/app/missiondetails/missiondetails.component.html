@@ -1,0 +1,24 @@
+<div class="container">
+  <img class="image" src="{{ missionDetails.links.mission_patch }}" alt="Mission Patch">
+  <div>
+    <h2 class="header">Mission - {{ missionDetails.mission_name }}</h2>
+    <p class="subtitle">Name: {{ missionDetails.mission_name }}</p>
+    <p class="subtitle">Launch Year: {{ missionDetails.launch_year }}</p>
+
+    <h3 class="details-header">Rocket</h3>
+    <p>Name: {{ missionDetails.rocket.rocket_name }}</p>
+    <p>Type: {{ missionDetails.rocket.rocket_type }}</p>
+
+    <h3 class="details-header">Launch Site</h3>
+    <p>Name: {{ missionDetails.launch_site.site_name_long }}</p>
+
+    <h3 class="details-header">Launch Details</h3>
+    <p>{{ missionDetails.details }}</p>
+
+    <h3 class="details-header">More info on launch details</h3>
+    <div class="links">
+      <a class="link" href="{{ missionDetails.links.video_link }}"><i class="fa fa-youtube-play"></i> Youtube</a>
+      <a class="link" href="{{ missionDetails.links.wikipedia }}"><i class="fa fa-wikipedia-w"></i> Wikipedia</a>
+    </div>
+  </div>
+</div>

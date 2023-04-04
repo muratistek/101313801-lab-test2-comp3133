@@ -1,0 +1,59 @@
+.mission-box {
+  background-color: blue;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.mission-header {
+  display: flex;
+  align-items: center;
+}
+
+.mission-patch {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.mission-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-name {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.launch-year {
+  margin: 0;
+  font-size: 0.8em;
+  color: grey;
+}
+
+.mission-details {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.mission-filter {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0077c2;
+  color: white;
+  border: none;
+
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #005ea8;
+}
