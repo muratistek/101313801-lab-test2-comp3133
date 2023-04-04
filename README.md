@@ -1,5 +1,7 @@
 # 101313801LabTest2Comp3133
 
+An application that works with the "SpaceX" data API
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
 ## Development server
